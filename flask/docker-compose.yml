@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  app:
+    container_name: flask_01
+    image: localhost/flask_app
+    # restart: always
+    ports:
+      - 5050:5000
+    volumes:
+      - my-volume:/var/
+      
+volumes:
+  my-volume:
+
