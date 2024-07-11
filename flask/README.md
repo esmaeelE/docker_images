@@ -12,6 +12,9 @@ docker run
 
 # Manage
 ```
+docker ps
+docker ps -a
+docker image ls
 ```
 
 
