@@ -2,17 +2,17 @@
 
 [SOURCE](https://www.freecodecamp.org/news/how-to-dockerize-a-flask-app/)
 
-# Build
+## Build
 ```
 docker build .
 ```
 
-# Run
+## Run
 ```
 docker run 
 ```
 
-# Manage
+## Manage
 ```
 docker ps
 docker ps -a
@@ -20,8 +20,7 @@ docker image ls
 ```
 
 
-# Use podman for 
-
+## Use podman instead of docker 
 
 ```
 podman build . -t flask_app
