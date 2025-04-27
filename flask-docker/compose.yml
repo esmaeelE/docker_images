@@ -1,0 +1,13 @@
+services:
+  flask-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app:ro
+    environment:
+      - FLASK_ENV=${FLASK_ENV}
+      - SECRET_KEY=${SECRET_KEY}
+      - FLASK_DEBUG=${FLASK_DEBUG}
