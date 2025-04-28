@@ -8,13 +8,26 @@ Now you can develope on docker container
 
 ```
 docker compose up -d
+docker compose up -d --remove-orphans
+docker compose down -v --remove-orphans
 ```
 
-## chech with curl 
-
+# check API with curl and httpie
 ```
 curl 127.0.0.1:5000
 ```
 
+```
+apt install httpie
+http GET 127.0.0.1:5000/
+curl 127.0.0.1:5000/
+```
+
+
+
 TODO
 convert to uv and system builder
+
+
+
+
